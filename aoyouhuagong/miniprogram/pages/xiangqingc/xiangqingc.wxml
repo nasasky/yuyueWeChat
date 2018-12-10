@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='tishi'>上传活动图片成功！</view>
+  <view class='ce'>
+  
+
+  <text class="iconfont icon-chenggongbiaoqing"style='margin:auto;left:0;right:0;margin-top:30px; position: absolute;width:48px;height:48px;'>{{chenggongbiaoqing}}</text>
+ </view>
+
+  <button formType="submit" style='float:left; background-color:#3190FA;color:#ffffff;width:90%;margin-left:5%;margin-top:150px;margin-bottom:50px;' bindtap='goB'>返回活动列表</button>
+</view>

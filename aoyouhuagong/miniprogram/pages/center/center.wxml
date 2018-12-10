@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="cloud://aoyou-d15ed1.616f-aoyou-d15ed1/logo.jpg" background-size="cover" /> </view>
+
+
+
+
+
+
+
+
+  <view>
+
+    <view>状态:{{item}}</view>
+
+    <view>描述:{{msg}}</view>
+
+
+    <view>活动开始时间:{{item[i].begin_time}}</view>
+    <view>活动地址:{{item[0].address}}</view>
+    <view>活动名称:{{item[0].title}}</view>
+
+    <view>活动封面图:{{item.img_url}}</view>
+  </view>
+</view>

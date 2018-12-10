@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='tishi'>{{msg}}，请返回！</view>
+
+
+ 
+</view>

@@ -1,0 +1,113 @@
+/* pages/eg/eg.wxss */
+/* 图片左间距40rpx */
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 888669 */
+  src: url('//at.alicdn.com/t/font_888669_a3ak5vd2z6.eot');
+  src: url('//at.alicdn.com/t/font_888669_a3ak5vd2z6.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_888669_a3ak5vd2z6.woff') format('woff'),
+  url('//at.alicdn.com/t/font_888669_a3ak5vd2z6.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_888669_a3ak5vd2z6.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:20px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3190FA;
+}
+
+.icon-chenggongbiaoqing:before { content: "\e631"; }
+
+.icon-qianjin:before { content: "\e74e"; }
+
+.icon-dingwei:before { content: "\e605"; }
+
+.icon-huodong:before { content: "\e600"; }
+
+.icon-huodong1:before { content: "\e602"; }
+
+.icon-fanhui:before { content: "\e65b"; }
+
+.icon-qianjin1:before { content: "\e609"; }
+
+.icon-shijian:before { content: "\e638"; }
+
+.icon-xiala:before { content: "\e63f"; }
+
+.icon-ziyuan:before { content: "\e66e"; }
+
+.icon-huodong2:before { content: "\e624"; }
+
+
+
+
+.pic {
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 40rpx;
+  margin-top: 50rpx;
+}
+ 
+/* 选择器控制页面的宽度布局，每行4个图片，每行第一个图片距离左边15rpx */
+.pic:nth-of-type(4n+1) {
+  margin-left: 15rpx;
+}
+/* 1，2，3，4图片距离上边距10rpx */
+.pic:nth-of-type(1), .pic:nth-of-type(2), .pic:nth-of-type(3),
+.pic:nth-of-type(4) {
+  margin-top: 10rpx;
+}
+
+.imgdx{
+  float: right;
+  width: 40px;
+ line-height: 30px;
+  /* height: 40px; */
+
+}
+.list-liebiao{
+  float: left;
+  width: 95%;
+  margin-left:2.5%;
+  margin-top: 10px; 
+}
+.category{
+  font-size: 30rpx;
+  float: left;
+  width: 100%;
+
+}
+.categorv{
+  font-size: 30rpx;
+  float: left;
+  margin-top: 20rpx;
+  
+}
+.xian{
+  float: left;
+  width: 100%;
+  
+  height: 1px;
+  background: #ebebeb;
+  margin-top: 20rpx;
+
+}
+.xian-a{
+  float: left;
+  width: 100%;
+  height: 15px;
+  margin-top: 25rpx;
+  background: #ebebeb;
+}
+
+.vb{
+  font-size: 20rpx;
+}
+
+.come{
+  float: right;
+  
+}

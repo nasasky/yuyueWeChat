@@ -1,0 +1,16 @@
+<view class='page'>
+
+<view class='titlex'>
+<text class='title'>请选择是否上传活动图片：</text>
+</view>
+  <view class="image_content">
+    <view class='image' wx:for="{{img_url}}" wx:key=''>
+      <image class="moment_img" src="{{item}}"  bindtap="delImg" data-index="{{index}}"></image>
+    </view>
+    <view class='image' style='display:{{hideAdd?"none":"block"}}'>
+      <image bindtap="chooseimage" class="moment_img" src='../../image/upload.jpg'></image>
+    </view>
+  </view>
+  <button bindtap="send" style='float:left; margin-right:5px;margin-left:5px;width:45%; background: #3190FA;color: white;'>上传图片</button>
+  <button bindtap='goc'  style='float:left; margin-right:5px;margin-left:5px;width:45%'>不上传图片</button>
+</view>

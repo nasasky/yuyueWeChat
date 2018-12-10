@@ -1,0 +1,137 @@
+<view class='page'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+   
+  <view style='float：left;width:80%;'>
+      <picker name="picker_hx" class="cybm_pic_1" value="{{pic_array[hx_index].id}}" data-selecthx="{{pic_array[hx_index].title}}" range="{{pic_array}}" range-key="{{'title'}}" bindchange="bindPickerChange_hx">
+        <view class="picker">
+          所属俱乐部: {{pic_array[hx_index].title}}
+        
+        </view>
+      </picker>
+      </view>
+
+       <view style='float:right;width:15%;margin-top:-21px;'>
+       <text class="iconfont icon-xiala">{{xiala}}</text>
+     </view>
+    </view>
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>活动名称：</view>
+      <input name="mingcheng" placeholder="请输入活动名称" bindinput="inputx" value='{{form_info}}'/>
+    </view>
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+    <view style='float：left;width:80%;'>
+        <picker  bindinput="inputime" name="shijian" mode="date" value="{{date}}" start="2015-09-01" bindchange="bindDateChange">
+        <view class="picker" style='font-size:16px;'> 报名截止时间: {{date}}</view>
+        
+      </picker>
+    </view>
+     <view style='float:right;width:15%;margin-top:-21px;'>
+       <text class="iconfont icon-xiala">{{xiala}}</text>
+     </view>
+     
+    </view>
+
+
+
+   <view class="section" style=' border-bottom: 1px solid #aaa;'>
+    <view style='float：left;width:80%;'>
+      <picker bindinput="inputime" name="shijianx" mode="date" value="{{datex}}" bindchange="bindDateChangex">
+        <view class="picker" style='font-size:16px;'> 活动日期: {{datex}} </view>
+      </picker>
+       </view>
+
+        <view style='float:right;width:15%;margin-top:-21px;'>
+       <text class="iconfont icon-xiala">{{xiala}}</text>
+     </view>
+    </view>
+
+
+
+
+
+<view class="section" style=' border-bottom: 1px solid #aaa;'>
+<view style='float：left;width:80%;'>
+      <picker bindinput="inputime" name="time" mode="time" value="{{time}}"  bindchange="bindDateChangev">
+        <view class="picker" style='font-size:16px;'>活动时间: {{time}} </view>
+      </picker>
+</view>
+
+<view style='float:right;width:15%;margin-top:-21px;'>
+       <text class="iconfont icon-xiala">{{xiala}}</text>
+     </view>
+    </view>
+
+
+
+
+ 
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>活动地点：</view>
+      <input name="didian" placeholder="请输入活动举办地点" bindinput="inputdi" value='{{form_info}}'/>
+    </view>
+
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>活动名额：</view>
+      <input name="minger" placeholder="请输入活动名额" bindinput="minger" value='{{form_info}}' />
+    </view>
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>活动费用：</view>
+      <input name="feiyong" placeholder="请输入活动费用" bindinput="feiyong"  value='{{form_info}}'/>
+    </view>
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>联系电话：</view>
+      <input name="dianhua" placeholder="请输入联系电话" bindinput="dianhua" value='{{dianhua}}' />
+    </view>
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;height:100px;'>
+     <view class="section__title" style='margin-bottom:5px;font-size:17px;'>活动内容：</view>
+      <textarea  style='height:65px;' name="content" bindinput="input" placeholder="活动流程" value='{{form_info}}'/>
+    </view>
+
+
+
+
+
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>比赛对方信息：</view>
+       <view class="section__title" style='margin-bottom:5px;font-size:14px;'>(针对足球篮球俱乐部，非必填选项)</view>
+      <input name="duifang" placeholder="输入对方比赛队名称" bindinput="duifang" />
+    </view>
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      
+     <view class="section section_gap">
+      <radio-group name="xingbie" bindinput="huodongsi" value='{{form_info}}'>
+        <label>
+          <radio value="0" />公开活动</label>
+        <label>
+          <radio value="1" />私密活动</label>
+      </radio-group>
+    </view>
+    
+    </view>
+
+
+
+
+
+
+
+    <button class='sud' formType="submit" style='margin-top:20px;margin-bottom:20px;'>发起活动</button>
+
+  </form>
+</view>

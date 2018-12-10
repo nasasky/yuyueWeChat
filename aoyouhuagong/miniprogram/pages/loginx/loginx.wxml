@@ -1,0 +1,28 @@
+
+<view class='changeInfo' >
+<view bindtap="bindViewTap" class="userinfo">
+    <image mode="widthFix"   style='width:100%;background-size:100% 100%;'  src="../../image/xc.png"  />
+    
+</view>
+
+
+
+
+<view class='changeInfoName'  style='margin-top:20px;'>
+     <input placeholder="请输入手机号" bindinput="listenerUsernameInput"/> 
+  </view>
+  <view class='changeInfoName'>
+     <input placeholder="请输入密码" password="true" bindinput="listenerPasswordInput"/> 
+    
+  </view>
+  <button class='changeBtn' bindtap="loginAction" >登录</button>
+ 
+<view class='changeInfoName' style='margin-top:50rpx;font-size:14px;line-height:80rpx;color:white;background:none;'>
+  <span bindtap='gocv'>用短信验证码登录</span> 
+    
+</view>
+
+
+
+</view>
+

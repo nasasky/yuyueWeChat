@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+
+
+
+
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>手机号：</view>
+      <input name="user_name"  value='{{user_name}}' />
+    </view>
+
+
+
+
+
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>姓名：</view>
+      <input name="nick_name" value='{{nick_name}}' />
+    </view>
+
+
+    <view class="section" style=' border-bottom: 1px solid #aaa;'>
+      <view class="section__title" style='margin-bottom:5px;font-size:17px;'>随行人数：</view>
+      <input name="suixing" value='0'/>
+    </view>
+
+
+    <view class="btn-area">
+      <!-- <navigator url="/pages/xiangqing/xiangqing?msg={{list.msg}}"> -->
+      <button formType="submit" style='background-color:#3190FA;color:#ffffff;width:90%;margin-left:5%;margin-top:50px;margin-bottom:50px;'>提交 </button>
+      <!-- </navigator>    -->
+      <!-- <button formType="reset" style='margin-top:20px;'>重置</button> -->
+    </view>
+
+
+    <view class='kongbai' style='width:100%;height:10px;'>
+    </view>
+  </form>
+
+
+</view>

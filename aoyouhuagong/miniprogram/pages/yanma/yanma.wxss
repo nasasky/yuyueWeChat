@@ -1,0 +1,47 @@
+page{
+ 
+  width: 100%;
+  background: linear-gradient(#5681d7, #486ec3);
+}
+.changeInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50rpx auto;
+}
+.changeInfoName{
+  position: relative;
+  height: 80rpx;
+  width: 100%;
+  border-radius: 10rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.codeBtn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #bbb;
+  width: 30%;
+  font-size: 26rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.changeInfoName input{
+  width: 100%;
+  height:100%;
+}
+.changeBtn{
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+   color: #808080;
+  border-radius: 10rpx;
+  position: relative;
+  letter-spacing: 40rpx;
+  margin-top: 10%;
+  line-height: 80rpx;
+}

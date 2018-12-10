@@ -1,0 +1,37 @@
+/**chuanjian.wxss**/
+
+.section{
+  padding: 10px 30rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+label{
+  margin-left: 10px;
+  margin-top: 15px;
+}
+input{
+ 
+}
+.picker{
+  font-size: 15px;
+}

@@ -1,0 +1,37 @@
+<view class="index-container">
+
+  <view  class="userinfo">
+    <view class='touxiang'>
+
+       <image class='avatar' src='{{avatar}}'></image>
+      
+
+    </view>
+   
+<view class="nickname">  {{nick_name}}</view>
+  </view>
+
+
+<view class='xian'></view>
+
+
+ <navigator url='../faqi/faqi'>
+<view class='faqi'>
+<text class="iconfont icon-huodong1">{{huodong1}}</text>
+<span class='huodong'>发起的活动</span>
+
+<view  class='imgdx' >
+<text class="iconfont icon-qianjin">{{qianjin}}</text>
+</view>
+</view>
+</navigator>
+<navigator url='../home/home'>
+<view class='faqi'>
+<text class="iconfont icon-ziyuan">{{ziyuan}}</text>
+<span class='huodong'>参加的活动</span>
+<view  class='imgdx' >
+<text class="iconfont icon-qianjin">{{qianjin}}</text>
+</view>
+</view>
+</navigator>
+</view>

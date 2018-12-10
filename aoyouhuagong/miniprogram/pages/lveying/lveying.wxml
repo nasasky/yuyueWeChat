@@ -1,0 +1,36 @@
+
+<view class="container">
+  <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;"
+    class="list" >
+    
+    
+    
+    <view class="item" wx:for="{{list}}" wx:key=''>
+    <view class='liebiaox'>
+    <view class='lietou'>
+<image class="img" src="{{item.img_url}}"></image>
+    </view>
+    
+      <view class="text">
+        <text class="title">{{item.nick_name}}</text>
+        
+      </view>
+       <view class="text" style='padding:0px 10px;'>
+       <text class="description">随行人数：{{item.number}}人</text>
+      </view>
+      <view class="text">
+       <text class="description">报名时间：{{item.add_time}}</text>
+      </view>
+    </view>
+      
+    </view>
+
+
+
+  </scroll-view>
+  <view class="body-view">
+    <loading hidden="{{hidden}}" bindchange="loadingChange">
+      加载中...
+    </loading>
+  </view>
+</view>
